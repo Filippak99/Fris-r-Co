@@ -1,0 +1,77 @@
+/***** shotst-contact form *****/
+#short-contact-form, #contact-form  {
+	position:relative;
+	vertical-align:top;
+	width:100%;
+	z-index:1;
+}
+	#short-contact-form fieldset, #contact-form fieldset {border:none; padding:0; width:100%; overflow:hidden;}
+		#short-contact-form label {display:block; min-height:39px; position:relative;}
+			#short-contact-form .message{min-height:113px;}
+			#short-contact-form input, #short-contact-form textarea {
+				padding:7px 10px;
+				margin:0;
+				font: 13px Arial, Helvetica, sans-serif;
+				color:#bfb69d;
+				background: #fff;
+				outline:none;
+				border:1px solid #e0e0d2;
+				width:368px;
+			}
+			#short-contact-form .area .error, #contact-form .area .error {float:none;}
+			#short-contact-form textarea {
+				height:82px;
+				resize:none;
+				overflow:auto;
+			}
+			#short-contact-form .success, #contact-form .success {display:none; margin-bottom:15px;}
+			#short-contact-form .error,
+			#short-contact-form .empty,
+			#contact-form .error,
+			#contact-form .empty {
+				color:#f00;
+				font-size:11px;
+				line-height:14px;
+				display:none;
+				overflow:hidden;
+				margin-bottom:5px;
+			}
+#short-contact-form .buttons-wrapper{text-align:right; position:relative;}
+#short-contact-form .buttons-wrapper a {cursor:pointer; background-color:#e0dbc8; padding: 10px 18px;}
+	#short-contact-form .buttons-wrapper a:hover{background-color:#cdc4aa;}
+
+/***** contact form *****/
+		#contact-form label {display:block; min-height:48px; position:relative;}
+			#contact-form .message{min-height:279px;}
+			#contact-form input, #contact-form textarea {
+				padding:10px 14px 12px;
+				margin:0;
+				font: 12px Arial, Helvetica, sans-serif;
+				color:#978e83;
+				background: #f3f4ea;
+				outline:none;
+				border:none;
+				width:346px;
+			}
+			#contact-form textarea {
+				width:562px;
+				height:245px;
+				resize:none;
+				overflow:auto;
+			}
+#contact-form .buttons-wrapper{text-align:left; position:relative;}
+#contact-form .buttons-wrapper a {cursor:pointer;}
+	#contact-form .buttons-wrapper a[data-type="reset"]{margin-right:10px;}
+
+@media only screen and (max-width: 995px) {
+	#short-contact-form input, #short-contact-form textarea {width:288px;}
+	#contact-form textarea{width:442px;}
+}
+@media only screen and (max-width: 767px){
+	#short-contact-form input, #short-contact-form textarea {width:398px;}
+	#contact-form input, #contact-form textarea{width:392px;}
+}
+@media only screen and (max-width: 479px){
+	#short-contact-form input, #short-contact-form textarea {width:278px;}
+	#contact-form input, #contact-form textarea{width:272px;}
+}
